@@ -1,0 +1,368 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide{
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(7, 44, 130) 100%);
+    color: #f7f7f7;
+    word-spacing: 50px;
+}
+
+body{
+    background-image: linear-gradient(90deg, rgba(232, 226, 231, 0.93) 0%, rgb(232, 230, 232) 100%);
+}
+
+
+
+
+
+
+/********************* nav menu *********************/
+
+.nav ul{
+    list-style: none;
+    background-image: linear-gradient(90deg, rgb(102, 2, 111) 0%, rgb(14, 2, 124) 100%);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav li{
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding-left: 15px;
+    transition: .4s;
+    position: relative;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(90deg, rgb(192, 79, 190) 0%, rgb(39, 84, 199) 100%);
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    transition: .4s;
+}
+.nav a:hover::after{
+    width: 30%;
+}
+.nav a:hover{
+    background-color: #ffffff;
+    color: rgb(124, 200, 248);
+}
+
+.nav li li{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/********************* Style menu for lager screen *********************/
+
+@media screen and (min-width: 650px) {
+    .nav li{
+        width: 250px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .nav a{
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a{
+        padding-left: 0;
+    }
+
+    /* Sub Menus */
+    
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+
+    .nav li:hover ul{
+        display: block;
+    }
+
+    .nav li ul li{
+        display: block;
+    }
+
+}
+
+
+
+
+
+.slide2{
+    width: 100%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    /* border: 5px solid red; */
+    /* border-radius: 10px; */
+}
+.slide2 figure img{
+    width: 20%;
+    height: 550px;
+    float: left;
+}
+.slide2 figure{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0px;
+    animation: project 20s infinite linear;
+}
+@keyframes project{
+    0%{left: 0%;}
+    15%{left: 0%;}
+    20%{left: -100%;}
+    35%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -200%;}
+    65%{left: -300%;}
+    80%{left: -300%;}
+    85%{left: -400%;}
+    100%{left: -400%;}
+}
+
+
+
+.container{
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    overflow: hidden; 
+}
+
+.con-info{
+    display: flex;
+    width: calc(200px * 18);
+    animation: scrooll 40s linear infinite;
+    /* border: 1px solid red; */
+}
+
+.con-info:hover{
+    animation-play-state: paused
+}
+
+.con{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    perspective: 100px;
+    /* border: 1px solid red; */
+}
+
+.img{
+    width: 300px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px #000000;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes scrooll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 9))
+    }
+}
+
+
+.container1{
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    overflow: hidden; 
+    /* border: 1px solid red; */
+}
+
+.con-info1{
+    display: flex;
+    width: calc(200px * 18);
+    animation: scrooll 40s linear infinite;
+}
+
+.con-info1:hover{
+    animation-play-state: paused
+}
+.con1{
+    width: 700px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    perspective: 100px;
+    /* border: 1px solid red; */
+}
+
+.img1{
+    width: 250px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px #000000;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.img1:hover{
+    transform: scale(1.1);
+}
+
+@keyframes scrooll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 9))
+    }
+}
+
+
+
+
+
+
+
+
+/********************* footer *********************/
+.footer-top{
+    margin-top: 47%;
+    padding: 0 10rem;
+    background-color: #000;
+}
+.footer{
+    background: #000000;
+    padding-left: 80px;
+    padding-right: 80;
+}
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.footer-logo{
+    width: 350px;
+}
+.footer-logo h3{
+    color: #fff;
+    font-size: 30px;
+}
+.footer-logo img{
+    width: 250px;
+}
+.footer-logo p{
+    margin-top: 20px;
+    color: #b9b4b4;
+    font-size: 18px;
+    width: 350px;
+}
+.footer-menu{
+    display: block;
+    list-style: none;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+.footer h1{
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.footer-menu li{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.footer-menu a{
+    text-decoration:none;
+    color: #b9b4b4;
+    transition: 0.3s;
+}
+.footer-contact{
+    margin-top: 3rem;
+}
+.footer-contact p{
+    color: #b9b4b4;
+    font-size: 17px;
+}
+.footer-icon{
+    transition: 0.3s;
+    margin-top: 30px;
+    word-spacing: 30px
+}
+.footer-icon:hover{
+    transform: scale(1.02);
+}
+.footer-icon a{
+    color: #FFF;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.footer-menu a:hover{
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+footer{
+    background-color: #000;
+    padding: 0 14rem;
+}
+.copy{
+    padding: 2rem;
+}
+.copy span{
+    color: #fff;
+    font-size: 18px;
+}

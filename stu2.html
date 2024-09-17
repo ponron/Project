@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="stu2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Noto+Sans+Thai:wght@100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div class="home">
+        <a href="stu7.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+    </div>
+    <form>
+        <div class="num">
+            <h3>จำนวนหน่ยกิตที่เรียนไปเเล้ว</h3>
+            <p id="totalValue">Total: 0</p>
+        </div>
+    <div class="tablelow">
+        <table>
+            <thead>
+                <th colspan="4" class="head">หมวดวิชาทั่วไป</th>
+            </thead>
+            <thead>
+                <th>รหัสวิชา</th>
+                <th>ชื่อวิชา</th>
+                <th>หน่วยกิต</th>
+                <th>เพิ่ม</th>
+            </thead>
+            <tbody>
+                <thead>
+                    <tr>
+                        <td>GE101</td>
+                        <td>ภาษาไทยเพื่อการสื่อสาร <br>(Thai for Communication)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="115" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td>GE102</td>
+                        <td>ภาษาไทยเพื่ออาชีพ <br>(Thai Language for Career)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GE103</td>
+                        <td>ภาษาอังกฤษเพื่อการสื่อสาร <br>(English for Communication)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td>GE104</td>
+                        <td>การอ่านภาษาอังกฤษเพื่อชีวิต <br>(English Reading for Life)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GE106</td>
+                        <td>จิตวิทยาและจริยธรรมทักษะชีวิต <br>(Psychology and Ethics Life Skills)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GE107</td>
+                        <td>โลกาภิวัตน์ทางเศรษฐกิจและการเมือง <br>(Political and Economic Globalization)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td>GE111</td>
+                        <td>คอมพิวเตอร์และสารสนเทศในยุคดิจิทัล <br>(Computer and Informatics in the digital Age)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>                      
+                    </tr>
+                    <tr>
+                        <td>GE112</td>
+                        <td>หลักสถิติ <br>(Principles of Statistics)</td>
+                        <td>3(2-2-5)</td>
+                        <td>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                        </td>
+                    </tr>
+                </thead>
+
+
+
+
+                <thead>
+                    <th colspan="4" class="head">หมวดวิชาเฉพาะ</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>BA101</td>
+                    <td>การบริหารธุรกิจ <br> (Business Administration)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA102</td>
+                    <td>หลักการตลาด  <br> (Principles of Marketing)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA103</td>
+                    <td>การบัญชีการเงิน <br> (Financial Accounting)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA201</td>
+                    <td>ภาษีอากรทางธุรกิจ <br> (Business Taxation)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA202</td>
+                    <td>กฎหมายธุรกิจ<br> (Business Law)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA203</td>
+                    <td>สถิติธุรกิจ <br> (Business Statistics)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA204</td>
+                    <td>ระบบการผลิตและการดำเนินงาน <br>(Production System and Operation)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA205</td>
+                    <td>การใช้โปรแกรมประยุกต์เพื่องานธุรกิจในยุคดิจิทัล<br>(Computer Applications in  Digital Business)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA206</td>
+                    <td>เศรษฐศาสตร์ทางธุรกิจ <br>(Business Economics)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA207</td>
+                    <td>การเงินธุรกิจ<br> (Business Finance)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA301</td>
+                    <td>การบัญชีเพื่อการบริหาร<br>(Managerial Accounting)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA302</td>
+                    <td>การจัดการทรัพยากรมนุษย์<br>(Human Resource Management)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA303</td>
+                    <td>การจัดการเชิงกลยุทธ์ <br> <br>(Strategic Management)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+
+
+                
+
+                <thead>
+                    <th colspan="4">กลุ่มวิชาเอกบังคับ(กลุ่มประเด็นด้านองค์การและระบบสารสนเทศ)</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>BC311</td>
+                    <td>การวิเคราะห์และออกแบบระบบงาน <br>(System Analysis and Design)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC312</td>
+                    <td>เตรียมฝึกประสบการณ์วิชาชีพทางคอมพิวเตอร์ธุรกิจ <br>(Preparation Field Experience in Didital Business Computer) </td>
+                    <td>1(45)</td>
+                    <td>
+                        <input type="checkbox" value="1" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC313</td>
+                    <td>ฝึกประสบการณ์วิชาชีพทางคอมพิวเตอร์ธุรกิจดิจิทัล <br>(Field Experience in Digital Business Computer)</td>
+                    <td>5(450)</td>
+                    <td>
+                        <input type="checkbox" value="5" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC414</td>
+                    <td>โครงงานทางคอมพิวเตอร์ธุรกิจดิจิทัล <br>(Project in Digital Business Computer)</td>
+                    <td>3(0-6-3)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC415</td>
+                    <td>สัมมนาทางคอมพิวเตอร์ธุรกิจดิจิทัล <br>(Serminar in Digital Business Computer)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+
+                
+
+
+                <thead>
+                    <th colspan="4">กล่มวิชาเอกบังคับ(กลุ่มเทคโนโลยีเพื่องานประยุกต์)</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>BC321</td>
+                    <td>การพัฒนาเว็บไซต์ทางธุรกิจดิจิทัล <br>(Website Development in Digital Business)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC322</td>
+                    <td>พาณิชย์อิเล็กทรอนิกส์ <br>(Electronic Commerce)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC323</td>
+                    <td>คอมพิวเตอร์กราฟฟิกและอนิเมชัน <br>(Computer Graphic and Animation)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC324</td>
+                    <td>เทคโนโลยีมัลติมีเดียและการประยุกต์ในทางธุรกิจดิจิทัล <br>(Multimedia Technilogy and Application for Business Digital)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()"  class="largerCheckbox"/>
+                    </td>
+                </tr>
+
+
+
+
+                <thead>
+                    <th colspan="4">กล่มวิชาเอกบังคับ(กลุ่มเทคโนโลยีและวิธีการทางซอฟต์แวร์)</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>BC231</td>
+                    <td>การเขียนโปรแกรมคอมพิวเตอร์ <br>(Computer Programming)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC232</td>
+                    <td>โครงสร้างข้อมูลและอัลกอริทึม <br>(Data Structures and Algorrithms)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC233</td>
+                    <td>เทคโนโลนีเชิงอ็อบเจ็ค <br>(Object-Oriented Technology)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+
+
+
+
+
+                <thead>
+                    <th colspan="4">กลุ่มวิชาเอกบังคับ(กลุ่มวิชาโครงสร้างพื้นฐานของระบบ)</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>BC241</td>
+                    <td>คอมพิวเตอร์และการดูแลรักษา <br>(Computer and Maintenance)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC242</td>
+                    <td>ระบบจัดการฐานข้อมูลและเทคโนโลยีฐานข้อมูล <br>(Database Management System and Database Technology)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+
+
+
+
+
+
+                <thead>
+                    <th colspan="4">กลุ่มวิชาเอกเลือก ให้เลือกเรียนรายวิชาต่อไปนี้จำนวน</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>BC503</td>
+                    <td>การศึกษาเฉพาะทางเรื่องคอมพิวเตอร์ธุรกิจดิจิทัล1<br>(Select Topics in Digital Business Computer1)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC504</td>
+                    <td>การศึกษาฉพาะทางเรื่องคอมพิวเตอร์ธุรกิจดิจิทัล2 <br>(Select Topics in Digital Business Computer2)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC505</td>
+                    <td>จรรยาบรรณและกฎหมายทางเทคโนโลยีสารสนเทศ <br>(Ethical Issues and Information Technology Law) </td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC506</td>
+                    <td>เทคโนโลยีเครือข่าย <br>(Network Technology)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BC507</td>
+                    <td>ระบบสารสนเทศเพื่องานธุรกิจดิจิทัล <br>(Business Information System)</td>
+                    <td>3(3-0-6)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="sub">
+        <input type="button" id="submitButton" onclick="window.location.href='stu8.html'" value="submit">
+    </div>
+    </form>
+
+
+
+
+
+   
+
+
+
+    <script>
+        function updateTotal() {
+            // Get all checkboxes
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            let total = 0;
+
+            // Calculate the total value of checked checkboxes
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    total += parseInt(checkbox.value, 10);
+                }
+            });
+
+            // Update the total value display
+            document.getElementById('totalValue').textContent = `Total: ${total}`;
+
+            // Get the submit button
+            const submitButton = document.getElementById('submitButton');
+
+            // Enable or disable the submit button based on the total value
+            submitButton.disabled = total < 120;
+        }
+    </script>
+
+
+
+
+
+
+    
+    
+</body>
+</html>

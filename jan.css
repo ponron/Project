@@ -1,0 +1,293 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide{
+    background-image: linear-gradient(90deg, rgb(23, 65, 189) 0%, rgba(4, 6, 11, 1) 100%);
+    color: #ffffff;
+    word-spacing: 50px;
+}
+
+
+body{
+    background-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+}
+
+
+
+
+
+
+
+/********************* nav menu *********************/
+.nav ul{
+    list-style: none;
+    background-image: linear-gradient(90deg, rgb(56, 1, 112) 0%, rgb(2, 27, 91) 100%);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav li{
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding-left: 15px;
+    transition: .4s;
+    position: relative;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(90deg, rgb(192, 79, 190) 0%, rgb(39, 84, 199) 100%);
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    transition: .4s;
+}
+.nav a:hover::after{
+    width: 30%;
+}
+.nav a:hover{
+    background-color: #ffffff;
+    color: rgb(124, 200, 248);
+}
+
+.nav li li{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/********************* Style menu for lager screen *********************/
+
+@media screen and (min-width: 650px) {
+    .nav li{
+        width: 250px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .nav a{
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a{
+        padding-left: 0;
+    }
+
+    /* Sub Menus */
+    
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+
+    .nav li:hover ul{
+        display: block;
+    }
+
+    .nav li ul li{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.header-btn1{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+}
+.header-info1{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.box1 img{
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.dis1 h1{
+    margin-top: 1rem;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Sarabun", sans-serif;
+    margin-bottom: 3rem;
+    color: #000000;
+}
+.box1{
+    position: relative;
+    margin: 0% auto 0;
+}
+
+.grow ::before, .grow ::after{
+    content: '';
+    position: absolute;
+    Left: 6.7rem;
+    top: -3px;
+    background: linear-gradient(45deg,#3b3a3a,#ccc7c7,#3b3a3a,#ccc7c7);
+    background-size: 500%;
+    width: calc(100% + -13.4rem);
+    height: calc(100% + -5.6rem);
+    z-index: -10;
+    border-radius: 23px;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.grow ::after{
+    filter: blur(10px);
+}
+
+
+
+
+
+
+
+
+
+/********************* footer *********************/
+.footer-top{
+    padding: 0 10rem;
+    background-color: #000;
+}
+.footer{
+    background: #000000;
+    padding-left: 80px;
+    padding-right: 80;
+}
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.footer-logo{
+    width: 350px;
+}
+.footer-logo h3{
+    color: #fff;
+    font-size: 30px;
+}
+.footer-logo img{
+    width: 250px;
+}
+.footer-logo p{
+    margin-top: 20px;
+    color: #b9b4b4;
+    font-size: 18px;
+    width: 350px;
+}
+.footer-menu{
+    display: block;
+    list-style: none;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+.footer h1{
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.footer-menu li{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.footer-menu a{
+    text-decoration:none;
+    color: #b9b4b4;
+    transition: 0.3s;
+}
+.footer-contact{
+    margin-top: 3rem;
+}
+.footer-contact p{
+    color: #b9b4b4;
+    font-size: 17px;
+}
+.footer-icon{
+    transition: 0.3s;
+    margin-top: 30px;
+    word-spacing: 30px
+}
+.footer-icon:hover{
+    transform: scale(1.02);
+}
+.footer-icon a{
+    color: #FFF;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.footer-menu a:hover{
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+footer{
+    background-color: #000;
+    padding: 0 14rem;
+}
+.copy{
+    padding: 2rem;
+}
+.copy span{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
