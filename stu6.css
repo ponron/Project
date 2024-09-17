@@ -7,7 +7,7 @@
 
 
 body{
-    height: 950px;
+    background-color: #909597;
 }
 
 
@@ -23,14 +23,14 @@ body{
 
 .progress-bar {
     height: 5px;
-    background-color: #4caf50;
+    background-color: #59c7f3;
     width: 0%; /* Start with 0% width */
     transition: width 0.4s ease;
 }
 .progress-containe {
     width: 500%;
     max-width: 450px;
-    background-color: #4caf50;
+    background-color: #4eddf7;
     border-radius: 5px;
     overflow: hidden;
     margin-top: -50%;
@@ -39,7 +39,7 @@ body{
 
 .progress-ba {
     height: 5px;
-    background-color: #4caf50;
+    background-color: #4eddf7;
     width: 0%; /* Start with 0% width */
     transition: width 0.4s ease;
 }
@@ -81,7 +81,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:url('https://i.pinimg.com/originals/09/24/4c/09244c7f7dd4d17b0484370f32db6641.gif');
+    /* background-image:url('https://i.pinimg.com/originals/09/24/4c/09244c7f7dd4d17b0484370f32db6641.gif'); */
     z-index: -1;
     background-size:cover;
     background-position: center;
@@ -141,7 +141,7 @@ body{
 .content .box i{
     position: absolute;
     bottom: 10rem;
-    left: 42px;
+    left: 38px;
     color: rgb(236, 166, 15);
     font-size: 50px;
 }
