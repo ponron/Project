@@ -42,7 +42,7 @@
                         <td>ภาษาไทยเพื่อการสื่อสาร <br>(Thai for Communication)</td>
                         <td>3(2-2-5)</td>
                         <td>
-                            <input type="checkbox" value="115" onclick="updateTotal()" class="largerCheckbox"/>
+                            <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
                         </td>                      
                     </tr>
                     <tr>
@@ -439,6 +439,34 @@
                         <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
                     </td>
                 </tr>
+
+
+
+                <thead></thead>
+                    <th colspan="4">หมวดวิชาเลือกเสรี ให้เลือกเรียนรายวิชาต่อไปนี้จำนวน</th>
+                </thead>
+                <thead>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เพิ่ม</th>
+                </thead>
+                <tr>
+                    <td>xxxxxx</td>
+                    <td>xxxxxxx<br>(xxxxxxxxxxx)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
+                <tr></tr>
+                    <td>xxxxxx</td>
+                    <td>xxxxxxx<br>(xxxxxxxxxxx)</td>
+                    <td>3(2-2-5)</td>
+                    <td>
+                        <input type="checkbox" value="3" onclick="updateTotal()" class="largerCheckbox"/>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -475,7 +503,7 @@
             const submitButton = document.getElementById('submitButton');
 
             // Enable or disable the submit button based on the total value
-            submitButton.disabled = total < 120;
+            submitButton.disabled = total < 126;
         }
     </script>
 
