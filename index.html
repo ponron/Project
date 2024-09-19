@@ -17,33 +17,31 @@
     
     <menu>
         <div class="nav">
-            <ul>
+            <ul class="menu" id="myMenu">
                 <li class="home"><a href="#">Home</a></li>
-                <li class="about"><a href="about.html">About</a>
-                    <!-- <ul> -->
-                        <!-- <li><a href="#">หลักสูตร</a></li> -->
-                        <!-- <li><a href="#">BDเรียนเกี่ยวกับอะไร</a></li> -->
-                        <!-- <li><a href="#">ค่าเทอม</a></li> -->
-                    <!-- </ul> -->
-                </li>
-                <li class="study"><a href="stu4.html">Study Plan</a>
-                    <!-- <ul> -->
-                        <!-- <li><a href="#">การเริ่มต้นเรียนหลักสูตร</a></li> -->
-                        <!-- <li><a href="#">แบบทดสอบ</a></li> -->
-                    <!-- </ul> -->
-                </li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="study"><a href="stu4.html">Study Plan</a></li>
                 <li class="department"><a href="jan.html">Department lecturer</a></li>
-                <!-- <li class="history"><a href="#">History</a> -->
-                    <!-- <ul> -->
-                        <!-- <li><a href="#">History 1</a></li> -->
-                        <!-- <li><a href="#">History 2</a></li> -->
-                        <!-- <li><a href="#">History 3</a></li> -->
-                    <!-- </ul> -->
-                </li>
                 <li class="new"><a href="news.html">News</a></li>
             </ul>
+            <div class="ham-munu" onclick="toggleHam(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
     </menu>
+    <script>
+        function toggleHam(x) {
+          x.classList.toggle("change");
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu'){
+                myMenu.className += ' menu-active'
+            } else {
+                myMenu.className = 'menu';
+            }
+        }
+        </script>
 
     <header>
         <div class="header-info">

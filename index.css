@@ -13,12 +13,17 @@
 
 
 
-
+body{
+    background-image: linear-gradient(90deg, rgb(0, 51, 255) 0%, rgb(2, 8, 9) 100%);
+}
 
 /********************* nav menu *********************/
 menu{
     position: sticky;
     top: 0;
+}
+.nav{
+    position: relative;
 }
 .nav ul{
     list-style: none;
@@ -120,6 +125,58 @@ menu{
     }
 
 }
+
+
+
+
+
+@media only screen and (max-width: 430px){
+    ul{
+        display: none;
+    }
+    .ham-menu {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      /* Rotate first bar */
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      /* Fade out the second bar */
+      .change .bar2 {opacity: 0;}
+      
+      /* Rotate last bar */
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+    .menu-active{
+        display: block !important;
+    }
+    .nav ul{
+        list-style: none;
+        background-image: linear-gradient(90deg, rgb(0, 51, 255) 0%, rgb(2, 8, 9) 100%);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid red; */
+        /* border-bottom: 1px solid black; */
+    }
+}
+
+
+
+
 
 
 /********************* headder *********************/
@@ -265,35 +322,4 @@ footer{
 .copy span{
     color: #fff;
     font-size: 18px;
-}
-@media screen and (max-width: 432px) and (max-height: 923px) {
-    header {
-        height: 400px; /* Adjust height for smaller screens */
-    }
-    
-    .header-info {
-        width: 300px; /* Adjust width for smaller screens */
-        font-size: 18px; /* Smaller font size */
-    }
-
-    .nav ul {
-        padding: 0 10px; /* Adjust padding */
-    }
-
-    .nav li {
-        font-size: 16px; /* Smaller font size */
-    }
-
-    .footer {
-        padding-left: 20px; /* Adjust padding */
-        padding-right: 20px; /* Adjust padding */
-    }
-
-    .footer-menu li {
-        font-size: 15px; /* Smaller font size */
-    }
-
-    .footer-logo {
-        width: 200px; /* Adjust logo size */
-    }
 }
