@@ -266,3 +266,34 @@ footer{
     color: #fff;
     font-size: 18px;
 }
+@media screen and (max-width: 432px) and (max-height: 923px) {
+    header {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+    
+    .header-info {
+        width: 300px; /* Adjust width for smaller screens */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .nav ul {
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    .nav li {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .footer {
+        padding-left: 20px; /* Adjust padding */
+        padding-right: 20px; /* Adjust padding */
+    }
+
+    .footer-menu li {
+        font-size: 15px; /* Smaller font size */
+    }
+
+    .footer-logo {
+        width: 200px; /* Adjust logo size */
+    }
+}
