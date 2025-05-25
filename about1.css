@@ -1,0 +1,361 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide{
+    background-image: linear-gradient(90deg, rgb(23, 65, 189) 0%, rgba(4, 6, 11, 1) 100%);
+    color: #ffffff;
+    word-spacing: 50px;
+}
+
+
+
+
+
+/********************* nav menu *********************/
+menu{
+    position: sticky;
+    top: 0;
+}
+.nav ul{
+    list-style: none;
+    background-image: linear-gradient(90deg, rgb(111, 1, 109) 0%, rgb(1, 37, 130) 100%);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav li{
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding-left: 15px;
+    transition: .4s;
+    position: relative;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(90deg, rgb(192, 79, 190) 0%, rgb(39, 84, 199) 100%);
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    transition: .4s;
+}
+.nav a:hover::after{
+    width: 30%;
+}
+.nav a:hover{
+    background-color: #ffffff;
+    color: rgb(124, 200, 248);
+}
+
+.nav li li{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/********************* Style menu for lager screen *********************/
+
+@media screen and (min-width: 650px) {
+    .nav li{
+        width: 250px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .nav a{
+        border-bottom: none;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a{
+        padding-left: 0;
+    }
+
+    /* Sub Menu */
+    
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+
+    .nav li:hover ul{
+        display: block;
+    }
+
+    .nav li ul li{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+.slide2{
+    width: 100%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    /* border: 5px solid red; */
+    /* border-radius: 10px; */
+}
+.slide2 figure img{
+    width: 20%;
+    height: 700px;
+    float: left;
+}
+.slide2 figure{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0px;
+    animation: project 20s infinite linear;
+}
+@keyframes project{
+    0%{left: 0%;}
+    15%{left: 0%;}
+    20%{left: -100%;}
+    35%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -200%;}
+    65%{left: -300%;}
+    80%{left: -300%;}
+    85%{left: -400%;}
+    100%{left: -400%;}
+}
+
+
+
+
+
+
+
+
+.tablelow{
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Serif Thai", serif;
+}
+table{
+    width: 55%;
+    margin-top: 2rem;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+/* table:hover
+    transform: scale(1.005);
+} */
+th{
+    font-size: 25px;
+    height: 50px;
+    border: 1px solid #9ebceb;
+    background-color: #9ebceb;
+    color: #ffffff;
+}
+td{
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid #9ebceb;
+    color: #000000;
+    transition: 0.3s;
+}
+/* .bg:hover{
+    background-color: #e9e3e3;
+}*/
+ td:hover{
+    color: #9ebceb;
+ }
+.table-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    width: 70%;
+    margin-top: 5rem;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 25px;
+    font-weight: bold;
+    /* background-color: #9ebceb; */
+    padding: 0.5rem;
+    color: #000000;
+    font-family: "Noto Serif Thai", serif;
+}
+
+
+
+
+
+
+
+.section{
+    margin-top: 3rem;
+}
+.section-info{
+    /* border: 1px solid red; */
+    line-height: 30px;
+    font-family: "Noto Serif Thai", serif;
+}
+.section-info h3{
+    font-size: 18px;
+    margin-left: 20%;
+    font-family: "Noto Serif Thai", serif;
+}
+.section-info p{
+    margin-top: 0.5rem;
+    margin-left: 22%;
+    font-family: "Noto Serif Thai", serif;
+}
+.section-info2 h4{
+    padding: 0.5rem;
+    font-size: 18px;
+    margin-left: 20%;
+    text-decoration: underline;
+    font-family: "Noto Serif Thai", serif;
+}
+.section-info3 h4{
+    margin-top: 0.5rem;
+    font-size: 18px;
+    margin-left: 21%;
+    line-height: 30px;
+    font-family: "Noto Serif Thai", serif;
+}
+.section-info3 img{
+    width: 50px;
+    margin-left: 51%;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+/********************* footer *********************/
+.footer-top{
+    padding: 0 10rem;
+    background-color: #000;
+}
+.footer{
+    background: #000000;
+    padding-left: 80px;
+    padding-right: 80;
+}
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.footer-logo{
+    width: 350px;
+}
+.footer-logo h3{
+    color: #fff;
+    font-size: 30px;
+}
+.footer-logo img{
+    width: 250px;
+}
+.footer-logo p{
+    margin-top: 20px;
+    color: #b9b4b4;
+    font-size: 18px;
+    width: 350px;
+}
+.footer-menu{
+    display: block;
+    list-style: none;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+.footer h1{
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.footer-menu li{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.footer-menu a{
+    text-decoration:none;
+    color: #b9b4b4;
+    transition: 0.3s;
+}
+.footer-contact{
+    margin-top: 3rem;
+}
+.footer-contact p{
+    color: #b9b4b4;
+    font-size: 17px;
+}
+.footer-icon{
+    transition: 0.3s;
+    margin-top: 30px;
+    word-spacing: 30px
+}
+.footer-icon:hover{
+    transform: scale(1.02);
+}
+.footer-icon a{
+    color: #FFF;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.footer-menu a:hover{
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+footer{
+    background-color: #000;
+    padding: 0 14rem;
+}
+.copy{
+    padding: 2rem;
+}
+.copy span{
+    color: #fff;
+    font-size: 18px;
+}

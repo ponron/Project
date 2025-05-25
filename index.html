@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Busniess Digital</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <marquee class="slide">
+        <h1 style="font-family: 'Baskervville SC';">WELCOME TO WEBSITE COMPUTER BUSSINESS OF DIGITAL</h1>
+    </marquee>
+    
+    <menu>
+        <div class="nav">
+            <ul class="menu" id="myMenu">
+                <li class="home"><a href="#">Home</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="study"><a href="stu4.html">Study Plan</a></li>
+                <li class="department"><a href="jan.html">Department lecturer</a></li>
+                <li class="new"><a href="news.html">News</a></li>
+            </ul>
+            <div class="ham-menu" onclick="toggleHam(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </menu>
+    <script>
+        function toggleHam(x) {
+          x.classList.toggle("change");
+            let myMenu = document.getElementById('myMenu');
+            if (myMenu.className === 'menu'){
+                myMenu.className += ' menu-active'
+            } else {
+                myMenu.className = 'menu';
+            }
+        }
+        </script>
+
+    <header>
+        <div class="header-info">
+            <!-- <h1>Computer</h1> -->
+            <br>
+            <br>
+            <!-- <a href="#" class="header-btn">Lean More</a> -->
+        </div>
+    </header>
+    
+    <div class="footer-top">
+        <div class="footer">
+            <div class="footer-nav">
+                <div class="footer-logo">
+                    <img src="LOGO1.png" alt="">
+                    <p>"สร้างปัญญา มีคุณธรรม นำสู่นักคอมพิวเตอร์มืออาชีพ"ผลิตบัณฑิตทางด้านคอมพิวเตอร์ที่มีความรู้เกี่ยวกับเทคโนโลยีสารสนเทศ ทั้งในด้านฮาร์ดแวร์ ซอฟต์แวร์ เเละบุคคลรวมไปถึงด้านบริหารธุรกิจ</p>
+                </div>
+                <div class="footer-menu">
+                    <h1>เกี่ยวกับเรา</h1>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                </div>
+                <div class="footer-contact">
+                    <h1>ติดต่อเรา</h1>
+                    <p>16/10 ถ.เลียบคลองทวีวัฒนา เขต/แขวงทวีวัฒนา กรุงเทพมหานคร 10170</p>
+                    <p>โทรศัพท์: 095-392-4428</p>
+                    <!-- <p>อีเมล: president@bkkthon.ac.th</p> -->
+                    <div class="footer-icon">
+                        <!-- <a href="https://www.facebook.com/BTUclub" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://qr-official.line.me/gs/M_211khwak_GW.png?oat_content=qr" target="blank"><i class="fa-brands fa-line"></i></a>
+                        <!-- <a href="https://www.youtube.com/@bkkthon-admission" target="blank"><i class="fa-brands fa-youtube"></i></a> -->
+                        <!-- <a href="https://www.tiktok.com/@bangkokthonburi.btu" target="blank"><i class="fa-brands fa-tiktok"></i></a> -->
+                        <!-- <a href="https://www.instagram.com/bangkokthonburi_university/" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copy">
+            <span>Copyright &copy; 2024 www.computerbusinessdigital.com All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>
